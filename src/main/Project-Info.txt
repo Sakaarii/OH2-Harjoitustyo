@@ -1,4 +1,4 @@
-Todo list for password generator project
+To Do list for password generator
 
 * == completed
 @ == work in progress
