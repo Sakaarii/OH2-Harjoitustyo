@@ -8,27 +8,37 @@ public class Generator {
     boolean useNumbers = true;
     boolean useSymbols = true;
     boolean useCapital = true;
-    Generator(int leng){
+    Generator(int leng, boolean symbols, boolean numbers, boolean capital){
         this.length = leng;
+        this.useSymbols = symbols;
+        this.useNumbers = numbers;
+        this.useCapital = capital;
     }
     public void generatePassword(){
         int leftLimit = 48; // "0"
         int rightLimit = 122; // "z"
 
         if (!useNumbers&&!useCapital){
-            leftLimit = 97; // "a"
+            leftLimit = 58; // "first symbol"
         }
         else if(!useNumbers){
             leftLimit = 65; // "A"
         }
-        else if(useSymbols){
+        if(useSymbols){
             rightLimit = 126; // "}"
         }
         
         // Secure random makes password 
         SecureRandom random = new SecureRandom();
 
-        if (!useSymbols){
+        if (!useSymbols&&!useCapital){
+            // filters out only symbols
+            password = random.ints(leftLimit, rightLimit+1)
+                    .filter(i -> (i <= 57 || i >= 97))
+                    .limit(length)
+                    .collect(StringBuilder::new, StringBuilder::appendCodePoint, StringBuilder::append)
+                    .toString();
+        }else if(!useSymbols){
             // filters out only symbols
             password = random.ints(leftLimit, rightLimit+1)
                     .filter(i -> (i <= 57 || i >= 65) && (i <= 90 || i >= 97))
@@ -42,13 +52,12 @@ public class Generator {
                     .limit(length)
                     .collect(StringBuilder::new, StringBuilder::appendCodePoint, StringBuilder::append)
                     .toString();
-        }else{
+        } else{
             // no filter
             password = random.ints(leftLimit, rightLimit+1)
                     .limit(length)
                     .collect(StringBuilder::new, StringBuilder::appendCodePoint, StringBuilder::append)
                     .toString();
-
         }
 
     }
@@ -57,7 +66,7 @@ public class Generator {
     }
 
     public static void main(String[] args) {
-        Generator b = new Generator(20);
+        Generator b = new Generator(20, true,false,true);
         b.generatePassword();
         System.out.println(b.getPassword());
     }
