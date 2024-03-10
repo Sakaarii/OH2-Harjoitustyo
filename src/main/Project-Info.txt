@@ -11,9 +11,10 @@ To Do list for password generator
 *- numbers
 *- symbols
 
---- Make a good-looking interface for the password generator
--- Has buttons for output customisation
--- Has button for saving and customizing generated password to liking
+*--- Make a good-looking interface for the password generator
+*-- Has buttons for output customisation
+*-- Has button for saving and customizing generated password to liking
+*-- Has button to put the password to clipboard
 -- Has button to save final password to password book
 -- Has button that opens password book
 
@@ -45,9 +46,20 @@ tehdyt asiat:
 
 --
 
-10.3: 15:00-
+10.3: 15:00-16:30
 --
 
 Korjailin algoritmin eri valintojen ulostuloa.
 
+Suunnittelin simppelin version main ui elementeista ja toimivuuksista.
 
+Lisäsin napin, joka laittaa tämänhetkisen näytöllä olevan salasanan windows clipboardiin,
+jotta sen voi kopioida suoraan käyttöön.
+
+tehdyt asiat:
+*--- Make a good-looking interface for the password generator
+*-- Has buttons for output customisation
+*-- Has button for saving and customizing generated password to liking
+*-- Has button to put the password to clipboard
+
+--

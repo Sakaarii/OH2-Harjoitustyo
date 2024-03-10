@@ -1,19 +1,44 @@
 package com.example.oh2_harjoitustyo;
 
 import java.security.SecureRandom;
+import java.util.Date;
 
 public class Generator {
-    private final int length;
+    private int length;
     private String password;
-    boolean useNumbers = true;
-    boolean useSymbols = true;
-    boolean useCapital = true;
+    private Date date;
+    private boolean useNumbers = true;
+    private boolean useSymbols = true;
+    private boolean useCapital = true;
     Generator(int leng, boolean symbols, boolean numbers, boolean capital){
         this.length = leng;
         this.useSymbols = symbols;
         this.useNumbers = numbers;
         this.useCapital = capital;
     }
+
+    public void setUseCapital(boolean useCapital) {
+        this.useCapital = useCapital;
+    }
+
+    public void setUseNumbers(boolean useNumbers) {
+        this.useNumbers = useNumbers;
+    }
+
+    public void setUseSymbols(boolean useSymbols) {
+        this.useSymbols = useSymbols;
+    }
+
+    public void setLength(int length) {
+        this.length = length;
+    }
+    public String getPassword(){
+        return password;
+    }
+    public Date getDate() {
+        return date;
+    }
+
     public void generatePassword(){
         int leftLimit = 48; // "0"
         int rightLimit = 122; // "z"
@@ -22,7 +47,7 @@ public class Generator {
             leftLimit = 58; // "first symbol"
         }
         else if(!useNumbers){
-            leftLimit = 65; // "A"
+            leftLimit = 58; // "A"
         }
         if(useSymbols){
             rightLimit = 126; // "}"
@@ -32,7 +57,7 @@ public class Generator {
         SecureRandom random = new SecureRandom();
 
         if (!useSymbols&&!useCapital){
-            // filters out only symbols
+            // filters out symbols and capitals
             password = random.ints(leftLimit, rightLimit+1)
                     .filter(i -> (i <= 57 || i >= 97))
                     .limit(length)
@@ -60,14 +85,5 @@ public class Generator {
                     .toString();
         }
 
-    }
-    public String getPassword(){
-        return password;
-    }
-
-    public static void main(String[] args) {
-        Generator b = new Generator(20, true,false,true);
-        b.generatePassword();
-        System.out.println(b.getPassword());
     }
 }
