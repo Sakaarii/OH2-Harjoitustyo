@@ -7,9 +7,9 @@ public class Generator {
     private int length;
     private String password;
     private Date date;
-    private boolean useNumbers = true;
-    private boolean useSymbols = true;
-    private boolean useCapital = true;
+    private boolean useNumbers;
+    private boolean useSymbols;
+    private boolean useCapital;
     Generator(int leng, boolean symbols, boolean numbers, boolean capital){
         this.length = leng;
         this.useSymbols = symbols;
