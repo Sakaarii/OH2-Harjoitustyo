@@ -20,15 +20,12 @@ public class Generator {
     public void setUseCapital(boolean useCapital) {
         this.useCapital = useCapital;
     }
-
     public void setUseNumbers(boolean useNumbers) {
         this.useNumbers = useNumbers;
     }
-
     public void setUseSymbols(boolean useSymbols) {
         this.useSymbols = useSymbols;
     }
-
     public void setLength(int length) {
         this.length = length;
     }
@@ -40,6 +37,9 @@ public class Generator {
     }
 
     public void generatePassword(){
+
+        date = new Date();
+
         int leftLimit = 48; // "0"
         int rightLimit = 122; // "z"
 

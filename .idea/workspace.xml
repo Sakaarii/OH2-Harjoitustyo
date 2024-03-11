@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f7e2982-fac1-4cc2-817f-89a0a756869d" name="Changes" comment="Fixing Generator.java class generatePassword outcomes depending on variables">
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+    <list default="true" id="4f7e2982-fac1-4cc2-817f-89a0a756869d" name="Changes" comment="Made a simple interface and fixed the generator fully, also added a feature to copy password to clipboard">
+      <change afterPath="$PROJECT_DIR$/pwdata.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/oh2_harjoitustyo/PasswordList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Project-Info.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Project-Info.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oh2_harjoitustyo/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oh2_harjoitustyo/Generator.java" afterDir="false" />
@@ -19,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="module-info" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -38,13 +39,16 @@
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2dPWgOXUxLNbZ12nDe0hn1kso7I" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "Application.Generator.executor": "Run",
     "Application.Interface.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -92,7 +96,14 @@
       <option name="presentableId" value="LOCAL−00003" />
       <updated>1710075994942</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL−00004" summary="Made a simple interface and fixed the generator fully, also added a feature to copy password to clipboard">
+      <option name="closed" value="true" />
+      <created>1710081315047</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1710081315047</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -119,8 +130,10 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Starting the project and making the main Generator Class" />
     <MESSAGE value="Fixing Generator.java class generatePassword outcomes depending on variables" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing Generator.java class generatePassword outcomes depending on variables" />
+    <MESSAGE value="Made a simple interface and fixed the generator fully, also added a feature to copy password to clipboard" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made a simple interface and fixed the generator fully, also added a feature to copy password to clipboard" />
   </component>
 </project>

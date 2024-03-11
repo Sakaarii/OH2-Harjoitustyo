@@ -15,14 +15,18 @@ To Do list for password generator
 *-- Has buttons for output customisation
 *-- Has button for saving and customizing generated password to liking
 *-- Has button to put the password to clipboard
--- Has button to save final password to password book
--- Has button that opens password book
+*-- Has button to save final password to password book
+*-- Has button that opens password book
 
---- Make a password book that stores saved passwords
--- Has button to delete passwords
-- When pressed puts individual delete buttons next to individual passwords
--- Passwords all have a timestamp of date-of-creation, to the day
---
+*--- Make a password book that stores saved passwords
+*-- Has button to delete passwords
+*- When pressed puts individual delete buttons next to individual passwords
+*-- Passwords all have a timestamp of date-of-creation, to the day
+*-- Make the window sizing adaptive to the amount of passwords
+*-- Add the ability to add the password to clipboard next to delete button
+
+*--- Implement reading from file and writing to file
+
 
 Pohjalogiikka salasana algoritmiin: https://www.baeldung.com/java-random-string
 
@@ -61,5 +65,35 @@ tehdyt asiat:
 *-- Has buttons for output customisation
 *-- Has button for saving and customizing generated password to liking
 *-- Has button to put the password to clipboard
+
+--
+
+
+11.3: 9:15-12:30
+--
+
+Tein salasanoiden listaamiselle uuden luokan, jonka sisällä on ArrayList, joka ottaa vastaan
+string listoja. Näiden sisällä laitetaan luotu salasana ja tag, joka siihen on laitettu joka erottaa sen käytön toisistaan.
+
+Loin Password Bookin, jossa näkyy varastoitavat salasanat ja lisäsin toiminnon, jossa klikkaamalla salasanoja se kopioituu
+suoraan clipboardille. Siinä on mukana myös tapa poistaa salsanoja.
+
+Työstin myös paljon password bookin ulkonäköä ja sitä että se on järkevän näköinen ja siinä näkyy kaikki tarvittavat asiat.
+
+Implementoin myös Password list objektin tallentamisen tiedostoon ja tiedostosta lukemisen, joten kaikki pää mekaniikat
+ovat nytten käytössä.
+
+tehdyt asiat:
+*-- Has button to save final password to password book
+*-- Has button that opens password book
+
+*--- Make a password book that stores saved passwords
+*-- Has button to delete passwords
+*- When pressed puts individual delete buttons next to individual passwords
+*-- Passwords all have a timestamp of date-of-creation, to the day
+**-- Make the window sizing adaptive to the amount of passwords
+**-- Add the ability to add the password to clipboard next to delete button
+
+*--- Implement reading from file and writing to file
 
 --
