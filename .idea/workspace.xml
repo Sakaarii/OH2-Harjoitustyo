@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f7e2982-fac1-4cc2-817f-89a0a756869d" name="Changes" comment="Made a simple interface and fixed the generator fully, also added a feature to copy password to clipboard">
-      <change afterPath="$PROJECT_DIR$/pwdata.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/oh2_harjoitustyo/PasswordList.java" afterDir="false" />
+    <list default="true" id="4f7e2982-fac1-4cc2-817f-89a0a756869d" name="Changes" comment="A bunch of changes, PasswordList as new object and bunch of gui changes. All functionality works">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Project-Info.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Project-Info.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oh2_harjoitustyo/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oh2_harjoitustyo/Generator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oh2_harjoitustyo/Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oh2_harjoitustyo/Interface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +98,21 @@
       <option name="presentableId" value="LOCAL−00004" />
       <updated>1710081315047</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL−00005" summary="A bunch of changes, PasswordList as new object and bunch of gui changes. All functionality works">
+      <option name="closed" value="true" />
+      <created>1710153803359</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1710153803359</updated>
+    </task>
+    <task id="LOCAL−00006" summary="A bunch of changes, PasswordList as new object and bunch of gui changes. All functionality works">
+      <option name="closed" value="true" />
+      <created>1710153853936</created>
+      <option name="number" value="LOCAL−00006" />
+      <option name="presentableId" value="LOCAL−00006" />
+      <updated>1710153853936</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -134,6 +143,7 @@
     <MESSAGE value="Starting the project and making the main Generator Class" />
     <MESSAGE value="Fixing Generator.java class generatePassword outcomes depending on variables" />
     <MESSAGE value="Made a simple interface and fixed the generator fully, also added a feature to copy password to clipboard" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made a simple interface and fixed the generator fully, also added a feature to copy password to clipboard" />
+    <MESSAGE value="A bunch of changes, PasswordList as new object and bunch of gui changes. All functionality works" />
+    <option name="LAST_COMMIT_MESSAGE" value="A bunch of changes, PasswordList as new object and bunch of gui changes. All functionality works" />
   </component>
 </project>
